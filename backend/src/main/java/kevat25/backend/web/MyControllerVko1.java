@@ -24,4 +24,6 @@ public class MyControllerVko1 {
     public String returnGreeting(@RequestParam (name="location") String lokaatio, @RequestParam (name="name") String etunimi) {
         return "Welcome to the " + lokaatio + " " + etunimi + "!";
     }
+
+    //Testi push
 }

@@ -25,5 +25,4 @@ public class MyControllerVko1 {
         return "Welcome to the " + lokaatio + " " + etunimi + "!";
     }
 
-    //Testi push
 }

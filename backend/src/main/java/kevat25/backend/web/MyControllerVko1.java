@@ -23,7 +23,7 @@ public class MyControllerVko1 {
     @ResponseBody
     public String returnGreeting(
         @RequestParam (name="location") String lokaatio,
-        @RequestParam (name="name") String etunimi) { //Tähän kävisi myös pelkkä @RequestParam String name
+        @RequestParam (name="name") String etunimi) { //Tähän kävisi myös pelkkä @RequestParam String name ja silloin returnissa myös + name +
         return "Welcome to the " + lokaatio + " " + etunimi + "!";
     }
 

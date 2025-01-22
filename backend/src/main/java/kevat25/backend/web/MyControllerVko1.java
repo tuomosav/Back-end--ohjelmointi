@@ -21,7 +21,9 @@ public class MyControllerVko1 {
 
     @RequestMapping("/hello")
     @ResponseBody
-    public String returnGreeting(@RequestParam (name="location") String lokaatio, @RequestParam (name="name") String etunimi) {
+    public String returnGreeting(
+        @RequestParam (name="location") String lokaatio,
+        @RequestParam (name="name") String etunimi) { //Tähän kävisi myös pelkkä @RequestParam String name
         return "Welcome to the " + lokaatio + " " + etunimi + "!";
     }
 
